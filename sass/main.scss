@@ -1,9 +1,43 @@
 // Put any @imports here
 // See Readme for a list of supported ones
 @import 'Foundation';
+@import 'bourbon';
+@import 'neat';
 
 body {
-  background: #e2ebf3;
+  background: #fff;
+  @include outer-container;
 
+  .controller {
+    margin-top: 2%;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 0;
+      color: #abc;
+    }
+
+    .desktop {
+      @include span-columns(6);
+      @include shift(3);
+    }
+
+    .plus {
+      width: 15%;
+      position: absolute;
+      top: 58%;
+      left: 20%;
+      cursor: pointer;
+    }
+
+    .likes {
+      position: absolute;
+      left: 43%;
+      top: 32%;
+      font-size: 50px;
+      color: #abc;
+
+    }
+  }
   
 }

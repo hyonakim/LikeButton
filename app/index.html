@@ -6,9 +6,12 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-  <div ng-controller="MyLikeButton">
-    <h1>Huge Button</h1>
-    <button ng-click="likeMe()" class="button round">{{count}} {{manyLikes}}</button>
+
+  <div ng-controller="MyLikeButton" class="controller">
+    <h1>Hit that Plus Sign</h1>
+    <img src="images/plus.png" ng-click="likeMe()" class="plus"/>
+	<img src="images/desktop.png" class="desktop"/>
+    <h2 class="likes">{{count}} {{manyLikes}}</h2>
   </div>
   
   <script src="js/main.js"></script>

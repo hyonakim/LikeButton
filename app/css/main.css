@@ -6387,7 +6387,46 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 body {
-  background: #e2ebf3; }
+  background: #fff;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  body::after {
+    clear: both;
+    content: "";
+    display: table; }
+  body .controller {
+    margin-top: 2%; }
+    body .controller h1 {
+      text-align: center;
+      margin-bottom: 0;
+      color: #abc; }
+    body .controller .desktop {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-left: 25.58941%; }
+      body .controller .desktop:last-child {
+        margin-right: 0; }
+    body .controller .plus {
+      width: 15%;
+      position: absolute;
+      top: 58%;
+      left: 20%;
+      cursor: pointer; }
+    body .controller .likes {
+      position: absolute;
+      left: 43%;
+      top: 32%;
+      font-size: 50px;
+      color: #abc; }
 
 /*# sourceMappingURL=main.css.map */
