@@ -1,7 +1,8 @@
-## Welcome to My Project
+## Like Button Project
 
-> I am your Readme.md file, you should probably update me.
+> Deployment http://that-likebutton.surge.sh
 
+- This project was made with the Angularjs framework using modules, controllers, and directives.
 
 ## Usage
 
